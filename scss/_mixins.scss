@@ -1,0 +1,49 @@
+// Mixins
+@mixin transition-all() {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@mixin serif-font() {
+  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+}
+@mixin sans-serif-font() {
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+section{
+  &#opportunities {
+    padding: 6rem 0;
+  }
+  .text-center {
+    padding-top: 40px;
+  }
+  h4.service-heading {
+    padding-top: 30px;
+  }
+  .col-md-4 {
+    padding: 10px 30px;
+  }
+}
+
+#team {
+  .section-heading {
+    // margin-top: -60px;
+  }
+  .team-member {
+    text-align: center;
+    padding-top: 30px;
+    img.mx-auto.rounded-circle {
+      max-width: 180px;
+    }
+    h4 {
+      padding-top: 20px;
+    }
+  }
+}
