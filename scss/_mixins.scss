@@ -58,7 +58,9 @@ section{
 .grid figure {
   position: relative;
   overflow: hidden;
-  height: 700px;
+  height: 500px;
+  width: calc(100% / 3);
+  height: 80vh;
 }
 
 .grid figure img {
@@ -153,7 +155,7 @@ figure.effect-goliath h2 {
 figure.effect-goliath p {
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
+  transition: opacity 0.35s, transform 0.65s;
   -webkit-transform: translate3d(0,50px,0);
   transform: translate3d(0,50px,0);
   position: absolute;
@@ -168,8 +170,9 @@ figure.effect-goliath:hover img {
 }
 
 figure.effect-goliath:hover h2 {
-  transform: translate3d(0,-500%,0);
-  display: none;
+  transform: translate3d(0,-50px,0);  
+  transition: opacity 0.35s, transform .65s;
+  top: 10%;
 }
 
 figure.effect-goliath:hover p {
