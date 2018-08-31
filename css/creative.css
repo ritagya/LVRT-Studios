@@ -20,13 +20,17 @@ section .col-md-4 {
   padding: 10px 30px;
 }
 
+section#footer {
+  padding: 1rem 0;
+}
+
 #team .team-member {
   text-align: center;
   padding-top: 30px;
 }
 
 #team .team-member img.mx-auto.rounded-circle {
-  max-width: 180px;
+  max-width: 120px;
 }
 
 #team .team-member h4 {
@@ -37,15 +41,15 @@ section .col-md-4 {
 .grid {
   display: flex;
   justify-content: space-between;
+  padding-top: 20px;
 }
 
 /* Common style */
 .grid figure {
     position: relative;
     overflow: hidden;
-  height: 500px;
   width: calc(100% / 3);
-  height: 80vh;
+  max-height: 700px;
 }
 
 .grid figure img {
@@ -119,6 +123,8 @@ figure.effect-goliath p {
     position: absolute;
     left: 0;
     padding: 30px;
+  font-weight: 400;
+  font-size: 20px;
 }
 
 figure.effect-goliath h2 {
@@ -128,13 +134,15 @@ figure.effect-goliath h2 {
 figure.effect-goliath p {
     opacity: 0;
     -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.65s;
+    transition: opacity 0.35s, transform 1s;
     -webkit-transform: translate3d(0, 50px, 0);
     transform: translate3d(0, 50px, 0);
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 30px;
+  font-weight: 300;
+  font-size: 18px;
 }
 
 figure.effect-goliath:hover img {
@@ -144,7 +152,7 @@ figure.effect-goliath:hover img {
 
 figure.effect-goliath:hover h2 {
   transform: translate3d(0, -50px, 0);
-  transition: opacity 0.35s, transform .65s;
+  transition: opacity 0.35s, transform 1s;
   top: 10%;
 }
 
@@ -154,6 +162,10 @@ figure.effect-goliath:hover p {
     transform: translate3d(0, 0, 0);
   background: #ff6b6b;
   top: 50%;
+}
+
+.row {
+  justify-content: center;
 }
 
 body,
@@ -175,9 +187,7 @@ hr.light {
 
 a {
   color: #ff6b6b;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
+  transition: all 0.9s;
 }
 
 a:hover {
@@ -191,6 +201,10 @@ h4,
 h5,
 h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+h5 {
+  margin-bottom: 20px;
 }
 
 .bg-pink {
@@ -244,9 +258,7 @@ img::-moz-selection {
   border-bottom: 1px solid rgba(128, 128, 128, 0.1);
   background-color: #fff;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
+  transition: all 0.9s;
 }
 
 #mainNav .navbar-brand {

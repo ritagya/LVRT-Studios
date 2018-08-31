@@ -37,12 +37,16 @@ h6 {
   @include sans-serif-font;
 }
 
+h5 {
+  margin-bottom: 20px;
+}
+
 .bg-pink {
   background-color: $primary-color !important;
 }
 
 .bg-dark {
-  background-color: #808080;
+  background-color: $gray;
 }
 
 .text-faded {
