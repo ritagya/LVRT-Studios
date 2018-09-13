@@ -53,6 +53,9 @@ section{
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
+  @media only screen and (max-width: 770px) {
+    flex-direction: column;
+  }
 }
 
 /* Common style */
@@ -60,7 +63,11 @@ section{
   position: relative;
   overflow: hidden;
   width: calc(100% / 3);
-  max-height: 700px;
+  max-height: 560px;
+  @media only screen and (max-width: 770px) {
+    width: 100%;
+    max-height: 250px;
+  }
 }
 
 .grid figure img {
@@ -127,7 +134,7 @@ section{
 /*-----------------*/
 
 figure.effect-goliath {
-  background: $primary-color;
+  background: $black;
 }
 
 figure.effect-goliath h2,
@@ -160,12 +167,19 @@ figure.effect-goliath p {
 figure.effect-goliath:hover img {
   -webkit-transform: translate3d(0,-80px,0);
   transform: translate3d(0,-80px,0);
+  @media only screen and (max-width: 990px) {
+     -webkit-transform: translate3d(0, -150px, 0);
+      transform: translate3d(0, -150px, 0);
+  }
 }
 
 figure.effect-goliath:hover h2 {
   transform: translate3d(0,-50px,0);  
   transition: opacity 0.35s, transform 1s;
   top: 10%;
+  @media only screen and (max-width: 990px) {
+    display: none;
+  }
 }
 
 figure.effect-goliath:hover p {
@@ -174,6 +188,10 @@ figure.effect-goliath:hover p {
   transform: translate3d(0,0,0);
   background: $primary-color;
   top: 50%;
+  @media only screen and (max-width: 990px) {
+    top: 0;
+    font-size: 16px;
+  }
 }
 
 .row {
@@ -195,4 +213,18 @@ header.formhead {
 
 .container.form {
   margin-top: -10%;
+}
+
+@media only screen and (max-width: 990px) {
+  figure.effect-goliath {
+    h2  {
+      font-size: 16px;
+      line-height: 1.6;
+      top: 30%;
+    }
+  }
+}
+
+#about p {
+  font-size: rem(18px);
 }
