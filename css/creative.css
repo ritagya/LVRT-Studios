@@ -158,31 +158,32 @@ figure.effect-goliath p {
   font-size: 18px;
 }
 
-figure.effect-goliath:hover img {
+figure.effect-goliath:hover img, figure.effect-goliath:active img {
     -webkit-transform: translate3d(0, -80px, 0);
     transform: translate3d(0, -80px, 0);
 }
 
 @media only screen and (max-width: 990px) {
-  figure.effect-goliath:hover img {
+  figure.effect-goliath:hover img, figure.effect-goliath:active img {
      -webkit-transform: translate3d(0, -150px, 0);
       transform: translate3d(0, -150px, 0);
+    cursor: pointer;
   }
 }
 
-figure.effect-goliath:hover h2 {
+figure.effect-goliath:hover h2, figure.effect-goliath:active h2 {
   transform: translate3d(0, -50px, 0);
   transition: opacity 0.35s, transform 1s;
   top: 10%;
 }
 
 @media only screen and (max-width: 990px) {
-  figure.effect-goliath:hover h2 {
+  figure.effect-goliath:hover h2, figure.effect-goliath:active h2 {
     display: none;
   }
 }
 
-figure.effect-goliath:hover p {
+figure.effect-goliath:hover p, figure.effect-goliath:hover p {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -191,7 +192,7 @@ figure.effect-goliath:hover p {
 }
 
 @media only screen and (max-width: 990px) {
-  figure.effect-goliath:hover p {
+  figure.effect-goliath:hover p, figure.effect-goliath:hover p {
     top: 0;
     font-size: 16px;
   }
@@ -233,6 +234,10 @@ header.formhead {
   font-size: rem(18px);
 }
 
+.form iframe {
+  width: 100%;
+}
+
 body,
 html {
   width: 100%;
@@ -268,10 +273,6 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
-h5 {
-  margin-bottom: 20px;
-}
-
 .bg-pink {
   background-color: #ff6b6b !important;
 }
@@ -282,7 +283,7 @@ h5 {
 
 .text-faded {
   color: rgba(255, 255, 255, 0.84);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif !important;
 }
 
 section {
@@ -418,6 +419,12 @@ header.masthead {
   background-size: cover;
 }
 
+@media only screen and (max-width: 590px) {
+  header.masthead {
+    padding-top: 8rem;
+  }
+}
+
 header.masthead hr {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -426,6 +433,12 @@ header.masthead hr {
 header.masthead h1 {
   font-size: 4rem;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 590px) {
+  header.masthead h1 {
+    font-size: 2rem;
+  }
 }
 
 header.masthead p {

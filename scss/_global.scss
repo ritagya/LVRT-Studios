@@ -37,21 +37,17 @@ h6 {
   @include sans-serif-font;
 }
 
-h5 {
-  margin-bottom: 20px;
-}
-
 .bg-pink {
   background-color: $primary-color !important;
 }
 
 .bg-dark {
-  background-color: $gray;
+  background-color: #808080;
 }
 
 .text-faded {
   color: rgba(255, 255, 255, 0.84);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif !important;
 }
 
 section {

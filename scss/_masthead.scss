@@ -4,6 +4,9 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   background-image: linear-gradient(0deg,rgba(47, 46, 46, 0.7),rgba(47, 46, 46, 0.7)), url(../img/headers/audience-band-concert-1105666.jpg);
   background-position: center center;
+  @media only screen and (max-width: 590px) {
+    padding-top: 8rem;
+  }
   @include background-cover;
   hr {
     margin-top: 30px;
@@ -12,6 +15,9 @@ header.masthead {
   h1 {
     font-size: 4rem;
     font-weight: 300;
+    @media only screen and (max-width: 590px) {
+      font-size: 2rem;
+    }
   }
   p {
     font-weight: 300;
